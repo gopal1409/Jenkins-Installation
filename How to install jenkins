@@ -1,0 +1,8 @@
+216  wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
+  217  sudo sh -c 'echo deb https://pkg.jenkins.io/debian-stable binary/ > /etc/apt/sources.list.d/jenkins.list'
+  218  sudo apt-get update
+  219  sudo apt-get install jenkins
+  220  service jenkins status
+  221  apt-get upgrade
+  222  service jenkins status
+  223  systemctl status jenkins
